@@ -32,3 +32,22 @@ element.appendChild(thirdElement);
 const forthElement = document.createElement("h4")
 forthElement.innerText = "hi it is your 4th Heading";
 element.appendChild(forthElement)
+
+
+
+
+
+
+const button = document.getElementById("myButton");
+button.addEventListener("click", changeColor)
+
+function changeColor() {
+    button.style.backgroundColor = "red";
+}
+
+
+
+const btn = document.getElementById("myButton");
+btn.addEventListener("click", function () {
+    btn.style.color = "#fff";
+})
