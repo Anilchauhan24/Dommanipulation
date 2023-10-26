@@ -14,6 +14,13 @@
         <nav>
             <div class="logo">
                 <h1>airbnb</h1>
+                <button type="button" id="btn" onclick="changeColor()">ChangeThemeColor</button>
+                <script>
+                    const changeColor = () => {
+                        let myBody = document.body;
+                        myBody.classList.toggle("newColor")
+                    }
+                </script>
             </div>
             <div class="stays">
                 <ul>
@@ -182,7 +189,7 @@
             <h2>Inspiration for future getways</h2>
             <div class="otherGatwayLinks">
                 <ul>
-                    <li>Popular</li>
+                    <li id="join">Popular</li>
                     <li>Arts& culture</li>
                     <li>Outdoors</li>
                     <li>Mountains</li>
@@ -193,7 +200,7 @@
                 </ul>
             </div>
 
-            <div class="popularElement">
+            <div class="popularElement" id="joinDiv">
                 <ul>
                     <li><a href="">Canmore</a></li>
                     <li><a href="">Tuscon</a></li>

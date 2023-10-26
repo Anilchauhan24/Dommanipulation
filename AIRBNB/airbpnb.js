@@ -20,3 +20,7 @@ links.style.wrap = "wrap";
 links.style.gap = "10px";
 links.style.justifyContent = "space-around"
 
+// const changeColor = () => {
+//     let myBody = document.body;
+//     myBody.classList.toggle("color")
+// }

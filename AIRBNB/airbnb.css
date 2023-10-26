@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.newColor {
+    background-color: black;
+    color: #fff;
+}
+
 .stays>ul {
     display: flex;
     flex-direction: row;
