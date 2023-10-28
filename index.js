@@ -189,3 +189,30 @@ const newAnimal = () => {
     animals.map(item => console.log(item))
 }
 newAnimal(animals)
+
+
+function showAnimals() {
+    if (i = 0 && i < animals.length) {
+        return animals.map(item => console.log(item))
+    }
+    else {
+        console.log("nothing")
+    }
+}
+showAnimals(animals)
+
+
+const score = [12, 1, 3, 56, 78, 90];
+
+const passingValue = score.filter((scores) => scores > 12);
+console.log(passingValue)
+
+
+function myPassingValue() {
+    if (score = 20 && score >= 20) {
+        console.log(score.filter((item => item >= 21)))
+    }
+    else {
+        console.log("nothing")
+    }
+}
