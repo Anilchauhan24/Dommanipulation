@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="airbnb.css" rel="stylesheet">
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/2d38ef399e.js" crossorigin="anonymous"></script>
     <title>Air Bnb</title>
 </head>
 
@@ -13,14 +15,27 @@
     <div class="container">
         <nav>
             <div class="logo">
-                <h1>airbnb</h1>
-                <button type="button" id="btn" onclick="changeColor()">ChangeThemeColor</button>
+                <span id="element" style="background-color: aqua;"></span>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
                 <script>
-                    const changeColor = () => {
-                        let myBody = document.body;
-                        myBody.classList.toggle("newColor")
-                    }
+                    var typed = new Typed('#element', {
+                        strings: ['<i>Airbnb</i>.', '&amp; visit for renting hotels.'],
+                        typeSpeed: 50,
+                    });
                 </script>
+                <h1>airbnb</h1>
+
+                <div class="rightToogle">
+                    <button type="button" id="btn" onclick="changeColor()"><i class="fa-solid fa-toggle-on"
+                            id="tagicon"></i></button>
+                    <script>
+                        const changeColor = () => {
+                            let myBody = document.body;
+                            myBody.classList.toggle("newColor")
+                        }
+                    </script>
+                </div>
             </div>
             <div class="stays">
                 <ul>
@@ -38,21 +53,38 @@
                 <button>Anywhere</button>
                 <button>Anywhere</button>
                 <button>Add Guest</button>
+                <i class="fa-solid fa-magnifying-glass" style="color: red;"></i>
             </div>
         </center>
         <div id="line"></div>
         <div class="infinity-scrolls">
             <div class="main-links">
                 <ul>
-                    <li>Farms</li>
-                    <li>Rooms</li>
-                    <li>Amazing views</li>
-                    <li>Top of the world</li>
-                    <li> New</li>
-                    <li>Amazing pools</li>
-                    <li>Beach</li>
-                    <li>Cabins</li>
-                    <li>OMG!</li>
+                    <li><span class="material-symbols-outlined">
+                            nest_multi_room
+                        </span>Farms</li>
+                    <li><span class="material-symbols-outlined">
+                            nest_multi_room
+                        </span>Rooms</li>
+                    <li><i class="fa-solid fa-tower-observation"></i>Amazing views</li>
+                    <li><span class="material-symbols-outlined">
+                            public
+                        </span>Top of the world</li>
+                    <li><span class="material-symbols-outlined">
+                            shutter_speed_add
+                        </span> New</li>
+                    <li><span class="material-symbols-outlined">
+                            pool
+                        </span>Amazing pools</li>
+                    <li><span class="material-symbols-outlined">
+                            beach_access
+                        </span>Beach</li>
+                    <li><span class="material-symbols-outlined">
+                            cabin
+                        </span>Cabins</li>
+                    <li><span class="material-symbols-outlined">
+                            face
+                        </span>OMG!</li>
                 </ul>
             </div>
             <div class="filter"></div>
@@ -201,7 +233,7 @@
             </div>
 
             <div class="popularElement" id="joinDiv">
-                <ul>
+                <ul id="addedList">
                     <li><a href="">Canmore</a></li>
                     <li><a href="">Tuscon</a></li>
                     <li><a href="">Anaheim</a></li>
@@ -241,11 +273,13 @@
             </div>
         </footer>
 
+
     </div>
 
 
     <script src="airbpnb.js"></script>
     <script src="ImageContainer.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </body>
 
 </html>

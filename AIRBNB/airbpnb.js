@@ -24,3 +24,33 @@ links.style.justifyContent = "space-around"
 //     let myBody = document.body;
 //     myBody.classList.toggle("color")
 // }
+
+var typed = new Typed('#element', {
+    strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+    typeSpeed: 50,
+});
+
+let icon = document.getElementById("tagicon");
+icon.addEventListener("click", function () {
+    icon.classList.add("fa-toggle-off")
+})
+
+icon.addEventListener("click", function () {
+    icon.classList.add("fa-toggle-on")
+})
+
+
+
+const ul = document.getElementById("addedList");
+const join = document.getElementById("join");
+ul.addEventListener("mouseover", addLinks)
+
+function addLinks() {
+    ul.style.display = "none";
+    for (let i = 0; i < ul.length; i++) {
+        ul.children[i].addEventListener("mouseover", addLinks)
+    }
+
+}
+
+

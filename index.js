@@ -1,73 +1,124 @@
-const element = document.getElementById("container");
+// const element = document.getElementById("container");
 
-const newElement = document.createElement("h1");
-newElement.textContent = "Hello! this is your new Heading";
+// const newElement = document.createElement("h1");
+// newElement.textContent = "Hello! this is your new Heading";
 
-element.appendChild(newElement);
+// element.appendChild(newElement);
 
-//creating a new paragraph
+// //creating a new paragraph
 
-const paraOne = document.createElement("p");
-paraOne.textContent = "Write the content of your choice";
-element.appendChild(paraOne)
+// const paraOne = document.createElement("p");
+// paraOne.textContent = "Write the content of your choice";
+// element.appendChild(paraOne)
 
-const paraColor = paraOne.style.color = "red";
+// const paraColor = paraOne.style.color = "red";
 
-const color = newElement.style.backgroundColor = "blue";
-const area = newElement.style.display = "inline";
-const textColor = newElement.style.color = "#fff";
-
-
-const secondElement = document.createElement("h2");
-secondElement.innerHTML = "This is 2nd Heading";
-element.appendChild(secondElement);
-//creating a new paragraph
-const secondPara = document.createElement("p");
-secondPara.innerHTML = "his is 2nd paragraph";
-element.appendChild(secondPara)
-const thirdElement = document.createElement("h3");
-thirdElement.textContent = "3rd heading of your choice";
-element.appendChild(thirdElement);
-
-const forthElement = document.createElement("h4")
-forthElement.innerText = "hi it is your 4th Heading";
-element.appendChild(forthElement)
+// const color = newElement.style.backgroundColor = "blue";
+// const area = newElement.style.display = "inline";
+// const textColor = newElement.style.color = "#fff";
 
 
+// const secondElement = document.createElement("h2");
+// secondElement.innerHTML = "This is 2nd Heading";
+// element.appendChild(secondElement);
+// //creating a new paragraph
+// const secondPara = document.createElement("p");
+// secondPara.innerHTML = "his is 2nd paragraph";
+// element.appendChild(secondPara)
+// const thirdElement = document.createElement("h3");
+// thirdElement.textContent = "3rd heading of your choice";
+// element.appendChild(thirdElement);
+
+// const forthElement = document.createElement("h4")
+// forthElement.innerText = "hi it is your 4th Heading";
+// element.appendChild(forthElement)
 
 
 
 
-const button = document.getElementById("myButton");
-button.addEventListener("click", changeColor)
 
-function changeColor() {
-    button.style.backgroundColor = "red";
+
+// const button = document.getElementById("myButton");
+// button.addEventListener("click", changeColor)
+
+// function changeColor() {
+//     button.style.backgroundColor = "red";
+// }
+
+
+
+// const btn = document.getElementById("myButton");
+// btn.addEventListener("click", function () {
+//     btn.style.color = "#fff";
+// })
+
+// const removePara = document.getElementById("removeButton");
+// removePara.addEventListener("click", () => {
+//     removePara.remove();
+// })
+
+
+
+// const target = document.getElementById("target");
+// const nextTarget = target.nextTarget;
+// if (nextTarget) {
+//     nextTarget.style.color = "green";
+// }
+
+
+// const link = document.querySelector("#target  a");
+// link.addEventListener("click", function () {
+//     event.preventDefault();
+//     alert("You clicked the link")
+// })
+
+const folder = ["name", "anil", "mongo", "react", "html"];
+// for (let i = 0; i < folder.length; i++) {
+//     console.log(folder);
+//     console.log(folder[2]);
+//     console.log(folder[i]);
+//     console.log(i);
+// }
+
+const getIdea = () => {
+    if (i = 0 && i < folder.length) {
+        console.log(folder)
+    }
+    else {
+        console.log(folder)
+    }
+
 }
+getIdea(folder)
 
+// received value only only one time with if
 
-
-const btn = document.getElementById("myButton");
-btn.addEventListener("click", function () {
-    btn.style.color = "#fff";
-})
-
-const removePara = document.getElementById("removeButton");
-removePara.addEventListener("click", () => {
-    removePara.remove();
-})
-
-
-
-const target = document.getElementById("target");
-const nextTarget = target.nextTarget;
-if (nextTarget) {
-    nextTarget.style.color = "green";
+const fakeIdea = () => {
+    for (let i = 0; i < folder.length; i++) {
+        console.log(folder)
+    }
 }
+fakeIdea(folder)
+
+//receivied value up to 5 times with the let
 
 
-const link = document.querySelector("#target  a");
-link.addEventListener("click", function () {
-    event.preventDefault();
-    alert("You clicked the link")
-})
+function myFunction() {
+    if (i = 0 && i < folder.length) {
+        console.log(folder)
+    }
+    else {
+        console.log(folder[i])
+    }
+}
+myFunction(folder)
+
+
+function yFunction() {
+
+    for (let i = 0; i < folder.length; i++) {
+        return console.log(folder);
+    }
+
+}
+yFunction(folder);
