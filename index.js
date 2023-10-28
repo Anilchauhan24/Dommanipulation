@@ -122,3 +122,65 @@ function yFunction() {
 
 }
 yFunction(folder);
+
+
+function gFunction(folder) {
+    this.folder;
+    if (folder.length < 0) {
+        console.log(folder);
+    }
+    else {
+        console.log(folder[i]);
+    }
+}
+
+const get = new gFunction(folder)
+
+
+// const penList = ["HTML", "CSS", "JAVASCRIPT", "NODE JS", "REACT", "PHP", "MONGODB"];
+
+// //implement Function , class function, constructor by using the loops and conditional statement to acheive the value of penlist
+
+// function myPen() {
+//     if (penList.length >= 0) {
+//         console.log(penList)
+//     }
+//     else {
+//         console.log(penList[i])
+//     }
+// }
+// myPen(penList);
+
+// function yourPen() {
+//     for (let i = 0; i < penList.length; i++) {
+//         console.log(penList[i])
+//     }
+// }
+// yourPen(penList);
+
+// const getPen = () => {
+//     if (i = 0 && i >= penList.length) {
+//         console.log(penList)
+//     }
+//     else if (penList.length >= 6) {
+//         console.log(penList[6])
+
+//     }
+//     else {
+//         console.log(i)
+//     }
+// }
+// getPen(penList)
+
+// const showPen = () => {
+//     for (let i = 0; i < penList.length; i++) {
+//         console.log(penList[2])
+//     }
+// }
+// showPen(penList)
+
+const animals = ["pen", "lions", "tiger", "banana", "chiku"]
+
+animals.forEach((key) => {
+    console.log(key)
+})
