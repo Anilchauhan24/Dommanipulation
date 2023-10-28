@@ -184,3 +184,8 @@ const animals = ["pen", "lions", "tiger", "banana", "chiku"]
 animals.forEach((key) => {
     console.log(key)
 })
+
+const newAnimal = () => {
+    animals.map(item => console.log(item))
+}
+newAnimal(animals)
